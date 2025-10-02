@@ -9,7 +9,7 @@ function App() {
         {/* Hero Section */}
       <section className="hero">
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcU-S2yjzNmmSVXwgMXnljBmTeaOwyfFur-w&s"
+        src="https://images.pexels.com/photos/52718/angel-wings-love-white-52718.jpeg"
         alt="Avatar"
         className="rounded-circle"
         width="125"
@@ -17,23 +17,23 @@ function App() {
       /> 
         <h1>Hello, I’m Charlotte 👋</h1>
         <p>Aspiring Developer | Designer | Creator</p>
-        <br></br>
-        <a href="#projects" className="btn">View My Work</a>
+        <br />
+        <a href="#projects" className="btn">See My Work</a>
       </section>
       {/* About Section */}
       <section className="about" id="about">
         <h2>About Me</h2>
         <p>
-          I’m a beginner React developer learning to build awesome apps with modern tools.
+        I am an aspiring web developer with a strong interest in front-end, back-end programming and modern frameworks such as React. I am passionate about designing clean, responsive, and user-friendly applications while continuously improving my technical skills. My long-term goal is to grow into a well-rounded developer who can contribute to innovative projects and deliver impactful digital solutions.
         </p>
       </section>
       {/* Projects Section */}
       <section className="projects" id="projects">
-        <h2>Frameworks</h2>
+        <h2>Frameworks and Build tool</h2>
           <CardsComp></CardsComp>
       </section>
       {/* Contact Section */}
-      <footer className="site-footer bg-dark text-light text-center py-3 mt-5" id="contact">
+      <footer className="site-footer" id="contact">
   <div className="footer-inner container">
     <p className="mb-2">&copy; 2025 Charlotte Nkuna. All Rights Reserved.</p>
     <p className="mb-2">

@@ -7,22 +7,23 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #ecf0f1; /* soft light gray */
-  color: #34495e; /* dark gray-blue for text */
+  background: #ecf0f1; 
+  color: #34495e; 
 }
 
 /* Hero section */
 .hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(120deg, #2c3e50, #18bc9c); /* navy → teal */
+  background: linear-gradient(120deg, #18bc9c, #4c657d);
   color: white;
+  height: 710px;
 
   .btn {
     margin-top: 1rem;
     padding: 0.7rem 1.5rem;
     background: white;
-    color: #18bc9c;
+    color: #119278;
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
@@ -67,41 +68,64 @@ body {
     }
 
     h5 {
-      color: #2c3e50; /* deep navy for card titles */
+      color: #2c3e50; 
     }
   }
 }
 
 /* Navbar */
 .navbar {
-  background: #2c3e50; /* navy */
-  color: #fff;
+  background: #ffffff; 
+  color: #2c3e50;
+}
 
-  .nav-link {
-    color: #fff !important;
-    font-weight: 500;
-    transition: 0.3s ease;
-
-    &:hover {
-      color: #18bc9c !important; /* teal accent */
-    }
-  }
+.navbar .nav-link {
+  color: #2c3e50 !important;
+  font-weight: bold;
+}
+.navbar .nav-link:hover {
+  color: #18bc9c !important;
 }
 
 /* Footer */
 .site-footer {
-  background: #2c3e50; /* navy */
+  background: #2c3e50;
   color: #fff;
   text-align: center;
   padding: 2rem 1rem;
   margin-top: auto;
 
   a {
-    color: #18bc9c; /* teal links */
+    color: #067660;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+.hero img{
+  margin-top: 180px;
+}
+
+
+
+
+/* Glassmorphism for React-Bootstrap cards - more transparent */
+.card {
+  background: rgba(24, 188, 156, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(24, 188, 156, 0.2); 
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  min-height: 400px;
+
+  &:hover {
+    transform: translateY(-16px) scale(1.02);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+    background: rgba(24, 188, 156, 0.12);
   }
 }
