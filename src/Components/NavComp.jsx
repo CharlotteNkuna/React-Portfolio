@@ -10,10 +10,10 @@ export default function NavComp() {
         <Nav.Link href="/home">Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">About</Nav.Link>
+        <Nav.Link eventKey="#about">About</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Contact</Nav.Link>
+        <Nav.Link href="#contact">Contact</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="disabled" disabled>

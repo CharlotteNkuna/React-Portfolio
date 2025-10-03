@@ -37,7 +37,48 @@ body {
 }
 
 /* Sections */
-.about,
+.about {
+  text-align: center;
+  padding: 5rem 2rem;
+  max-width: 1300px;
+  margin: auto;
+  border-radius: 16px;
+  margin-top: 50px;
+
+  /* Glass background with soft tint */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  
+  &:hover {
+
+    background: rgba(9, 38, 32, 0.12);
+    border: 1px solid rgba(17, 146, 120, 0.25);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    h2 {
+      color: rgb(250, 248, 248);
+    }
+
+    p{
+      color: white;
+    }
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2c3e50;
+  }
+}
+
+
 .projects,
 .contact {
   text-align: center;
@@ -109,10 +150,7 @@ body {
   margin-top: 180px;
 }
 
-
-
-
-/* Glassmorphism for React-Bootstrap cards - more transparent */
+/* Glassmorphism for React-Bootstrap cards */
 .card {
   background: rgba(24, 188, 156, 0.08);
   backdrop-filter: blur(12px);
@@ -126,6 +164,6 @@ body {
   &:hover {
     transform: translateY(-16px) scale(1.02);
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
-    background: rgba(24, 188, 156, 0.12);
+    background: rgba(9, 38, 32, 0.12);
   }
 }
